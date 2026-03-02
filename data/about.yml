@@ -1,0 +1,47 @@
+tagline: "[Work](#). Address. [Contacts](#). Motto. Etc."
+
+end-tagline: You can even add a little note about which of these is the best way to reach you.
+
+# Optional sections
+profile:
+  picture: /assets/pfp.png
+  caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+projects:
+  feature-title: selected projects
+  items:
+    - title: My latest project
+      description: A brief description of my latest project. It is about something very cool and innovative. You should definitely check it out!
+      links: [
+        { name: GitHub, url: /, icon: fa-brands fa-github},
+        { name: Demo, url: /, icon: fa-solid fa-globe},
+        { name: Model, url: /, icon: fa-brands fa-kaggle},
+      ]
+
+papers:
+  feature-title: featured papers
+  items:
+    - title: My latest paper
+      date: Published at Jan 1, 2024
+      tags: { subject: physics, bg_color: skyblue, text_color: black }
+      description: A brief description of my latest paper. It is about something very interesting and important. You should definitely read it!
+      links: [
+        { name: arXiv, url: / },
+        { name: PDF, url: / },
+        { name: Scholar, url: / },
+      ]
+
+blog:
+  feature-title: latest blog posts
+  items:
+    - title: My latest blog post
+      date: May 20, 2024
+      tags: [research, ml]
+      description: A brief description of my latest blog post.
+      link: /
+
+    - title: Another blog post
+      date: Jan 10, 2024
+      tags: [writing]
+      description: A brief description of another blog post.
+      link: /

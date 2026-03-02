@@ -1,0 +1,12 @@
+posts:
+  - title: My latest blog post
+    date: May 20, 2024
+    tags: [research, ml]
+    description: A brief description of my latest blog post. This is where you summarize what the post is about.
+    link: /blog/my-latest-blog-post
+
+  - title: Another blog post
+    date: Jan 10, 2024
+    tags: [writing]
+    description: A brief description of another blog post. Give the reader a reason to click through.
+    link: /blog/another-blog-post
