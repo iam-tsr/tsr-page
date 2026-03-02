@@ -1,0 +1,44 @@
+# Site metadata and configuration
+
+# Greeting message - optional
+greeting: Hello! I am
+
+# Your information
+first_name: You
+middle_name: R.
+last_name: Name
+nickname: YRN
+
+# Your image
+icon: ☢️ # /assets/icon.jpg
+
+# Contact information
+contacts:
+  - url: mailto:you@example.com
+    icon: fa-solid fa-envelope
+  - url: /
+    icon: fa-brands fa-github
+  - url: /
+    icon: fa-brands fa-linkedin
+  - url: /
+    icon: fa-brands fa-x-twitter
+  - url: /
+    icon: fa-brands fa-medium
+  - url: /
+    icon: fa-brands fa-google-scholar
+
+# Site configuration
+url: https://iam-tsr.github.io
+baseurl: /tsr-folio # leave empty for github action deployment
+width: 900px
+
+# Pages configuration
+pages:
+  - title: about
+    url: /
+    body: _content/about.html
+    css: /_style/about.css
+  - title: blog
+    url: /blog/
+    body: _content/blog.html
+    css: /_style/blog.css
