@@ -134,33 +134,55 @@ permalink: /_style/about.css
     padding-bottom: 1rem;
 }
 
-.paper-card-meta {
+.paper-card-meta, .project-card-meta, .blog-card-meta{
     display: flex;
-    align-items: center;
     gap: 1rem;
     margin: 0 0 0.5rem 0;
 }
 
-.paper-card-tags {
+.paper-card-meta {
+    align-items: center;
+}
+
+.project-card-meta, .blog-card-meta {
+    align-items: baseline;
+    margin: 0;
+}
+
+.paper-card-tags, .project-card-tags, .blog-card-tags{
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
 }
 
 .paper-tag {
-    font-size: var(--small);
+    background-color: var(--accent-color);
+    font-size: var(--very-small);
+    font-weight: 400;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0.05rem 0.7rem;
     border-radius: 2px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'roboto', monospace;
+}
+
+.project-tag, .blog-tag{
+    background-color: var(--border-color);
+    color: var(--text-secondary);
+    font-size: var(--very-small);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.05rem 0.7rem;
+    border-radius: 999px;
+    font-family: 'roboto', monospace;
 }
 
 .date {
     font-size: var(--small);
     color: var(--text-secondary);
-    font-family: 'Space Mono', monospace;
+    font-family: 'roboto', monospace;
     margin: 0 0 0.2rem 0;
 }
 .description {

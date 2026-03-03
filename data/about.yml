@@ -11,6 +11,7 @@ projects:
   feature-title: selected projects
   items:
     - title: My latest project
+      tags: [research, ml]
       description: A brief description of my latest project. It is about something very cool and innovative. You should definitely check it out!
       links: [
         { name: GitHub, url: /, icon: fa-brands fa-github},
@@ -27,8 +28,9 @@ papers:
       description: A brief description of my latest paper. It is about something very interesting and important. You should definitely read it!
       links: [
         { name: arXiv, url: / },
-        { name: PDF, url: / },
         { name: Scholar, url: / },
+        { name: Slides, url: / },
+        { name: PDF, url: / },
       ]
 
 blog:
@@ -36,12 +38,10 @@ blog:
   items:
     - title: My latest blog post
       date: May 20, 2024
-      tags: [research, ml]
-      description: A brief description of my latest blog post.
+      tags: [research, ml,]
       link: /
 
     - title: Another blog post
       date: Jan 10, 2024
-      tags: [writing]
-      description: A brief description of another blog post.
+      tags: [writing,]
       link: /

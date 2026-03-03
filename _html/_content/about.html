@@ -23,7 +23,16 @@
             <h3 class="feature-title">{{ about.projects.feature-title }}</h3>
             {% for project in about.projects.items %}
             <article class="project-card">
-                <h4 class="project-title">{{ project.title }}</h4>
+                <div class="project-card-meta">
+                    <h4 class="project-title">{{ project.title }}</h4>
+                    {% if project.tags %}
+                    <div class="project-card-tags">
+                        {% for tag in project.tags %}
+                        <span class="project-tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
                 <p class="description">{{ project.description }}</p>
                 {% for link in project.links %}
                 <a class="button" href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><i
@@ -64,7 +73,16 @@
             <h3 class="feature-title">{{ about.blog.feature-title }}</h3>
             {% for blog in about.blog.items %}
             <article class="blog-card">
-                <span class="date">{{ blog.date }}</span>
+                <div class="blog-card-meta">
+                    <span class="date">{{ blog.date }}</span>
+                    {% if blog.tags %}
+                    <div class="blog-card-tags">
+                        {% for tag in blog.tags %}
+                        <span class="blog-tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
                 <h4 class="blog-title">
                     <a href="{{ blog.link }}" target="_blank" rel="noopener noreferrer">{{ blog.title }}</a>
                 </h4>
