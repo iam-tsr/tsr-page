@@ -1,0 +1,52 @@
+adjustment:
+  image:
+    height: "220px"
+
+sections:
+  - section-title: featured projects
+    projects:
+      - title: My latest project
+        description: A brief description of my latest project. It is about something very cool and innovative. You should definitely check it out!
+        links: [
+          { url: /, icon: fa-brands fa-github },
+          { url: /, icon: fa-solid fa-globe },
+          { url: /, icon: fa-brands fa-kaggle },
+          { url: /, icon: fa-solid fa-file-lines },
+          { url: /, icon: fa-solid fa-video },
+          { url: /, icon: fa-solid fa-book },
+          { url: /, icon: fa-solid fa-newspaper },
+        ]
+        image: https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop
+        tags: [writing, research, ml, data science, python, kaggle, video]
+        
+      
+      - title: Another project
+        description: A brief description of another project. It is about something else that is also very interesting and useful. You should also check it out!
+        links: [
+          { url: /, icon: fa-brands fa-github },
+          { url: /, icon: fa-solid fa-globe },
+        ]
+        image: https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop
+        tags: [research, ml, data science, python]
+
+  - section-title: other projects
+    projects:
+      - title: Another project
+        description: A brief description of another project. It is about something else that is also very interesting and useful. You should also check it out!
+        links: [
+          { url: /, icon: fa-brands fa-github },
+          { url: /, icon: fa-solid fa-globe },
+        ]
+        # image: https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q?auto=format&fit=crop
+        tags: [writing]
+      
+      - title: My latest project
+        description: A brief description of my latest project. It is about something very cool and innovative. You should definitely check it out!
+        links: [
+          { url: /, icon: fa-brands fa-github },
+          { url: /, icon: fa-solid fa-globe },
+          { url: /, icon: fa-brands fa-kaggle },
+          { url: /, icon: fa-solid fa-file-lines },
+          { url: /, icon: fa-solid fa-video },
+        ]
+        tags: [writing, research, ml, data science, python, kaggle, video]

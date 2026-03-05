@@ -1,0 +1,44 @@
+adjustment:
+  banner:
+    height: "150px"
+    width: "100%" # Keep it as it is to maintain the aspect ratio of the banner image
+    absolute_dim: "150px"
+
+  post:
+    height: "50%"
+    width: "90%"
+    absolute_dim: "320px"
+  
+banner:
+  image: "https://images.unsplash.com/photo-1561570541-aaba21a3ecf0?auto=format&fit=crop"
+  alt: Blog Banner
+  width: 1200
+  height: 400
+
+posts:
+  - title: My latest blog post
+    date: May 20, 2024
+    tags: [research, ml, ai,]
+    image: https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop
+    path: content/blog/my-latest-blog-post.md
+    color: { background: "#464E7D", text: "white" }
+  
+  - title: Another blog post
+    date: Jan 10, 2024
+    tags: [writing]
+    image: https://images.unsplash.com/photo-1708011271935-3e109df56fe0?auto=format&fit=crop
+    path: content/blog/another-blog-post.md
+    color: { background: "#D9D9D9", text: "black" }
+  
+  - title: A third blog post
+    date: Mar 5, 2024
+    tags: [coding, tips]
+    image: https://images.unsplash.com/photo-1707135719639-409915fbc68f?auto=format&fit=crop
+    link: /
+    color: { background: "#D9D9D9", text: "black" }
+
+  - title: A fourth blog post
+    date: Apr 15, 2024
+    tags: [lifestyle]
+    image: https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop
+    link: /

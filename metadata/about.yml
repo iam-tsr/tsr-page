@@ -1,0 +1,45 @@
+tagline: "[Work](#). Address. [Contacts](#). Motto. Etc."
+
+end-tagline: You can even add a little note about which of these is the best way to reach you.
+
+# Optional sections
+profile:
+  picture: /assets/pfp.png
+  caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+news:
+  feature-title: news
+  items:
+    - date: "[Jan 2024]"
+      description: "It is a long [established](#) fact that a reader will be distracted by the readable content."
+
+    - date: "[Dec 2023]"
+      description: Contrary to popular belief, [Lorem Ipsum](#) is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+
+publications:
+  feature-title: selected publications
+  items:
+    - title: My latest paper
+      date: Published at Jan 1, 2024
+      authors: "[Alice Johnson](#), [Bob Brown](#)"
+      journal: There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+      tags: { subject: physics, bg_color: skyblue, text_color: black }
+      links: [
+        { name: arXiv, url: / },
+        { name: Scholar, url: /, icon: fa-brands fa-google-scholar },
+        { name: Slides, url: / },
+        { name: PDF, url: /, icon: fa-solid fa-file-pdf },
+      ]
+
+blog:
+  feature-title: latest blog posts
+  items:
+    - title: My latest blog post
+      date: May 20, 2024
+      tags: [research, ml]
+      link: /
+
+    - title: Another blog post
+      date: Jan 10, 2024
+      tags: [writing,]
+      link: /
