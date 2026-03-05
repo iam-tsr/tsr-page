@@ -1,0 +1,22 @@
+---
+layout: base.njk
+pagination:
+  data: site.pages
+  size: 1
+  alias: pageData
+permalink: "{{ pageData.url }}"
+eleventyComputed:
+  title: "{{ pageData.title }}"
+  css: "{{ pageData.css }}"
+---
+
+<main>
+    {% if pageData.title and pageData.title != 'about' %}
+    <div class="page-title">
+        <h2 class="page-title">{{ pageData.title }}</h2>
+        <p class="caption">{{ pageData.caption }}</p>
+    </div>
+    {% endif %}
+
+    {% include pageData.page %}
+</main>

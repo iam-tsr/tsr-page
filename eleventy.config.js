@@ -1,3 +1,5 @@
+import { watch } from 'fs';
+
 export default async function(eleventyConfig) {
   const fs = await import('fs/promises');
   const yaml = await import('js-yaml');
@@ -12,7 +14,7 @@ export default async function(eleventyConfig) {
   const siteData = yaml.load(siteContent);
   
   // Load all YAML files from data directory
-  const dataDir = './data';
+  const dataDir = './metadata';
   const dataFiles = await fs.readdir(dataDir);
   
   for (const file of dataFiles) {
@@ -45,12 +47,20 @@ export default async function(eleventyConfig) {
     }
   }
   
+  // Watch YAML files for changes
+  eleventyConfig.addWatchTarget("./site.yml", {
+		resetConfig: true
+	});
+  eleventyConfig.addWatchTarget("./metadata/", {
+		resetConfig: true
+	});
+
   // Copy files to output
-  eleventyConfig.addPassthroughCopy("_html");
+  eleventyConfig.addPassthroughCopy("_pages");
   eleventyConfig.addPassthroughCopy("_scripts");
   eleventyConfig.addPassthroughCopy("_style");
   eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy("pages");
+  eleventyConfig.addPassthroughCopy("content");
   
   // Add global data from site.yml
   eleventyConfig.addGlobalData("site", () => siteData);
@@ -81,7 +91,7 @@ export default async function(eleventyConfig) {
     dir: {
       input: ".",
       output: "_site",
-      includes: "_html",
+      includes: "_layout",
     },
   };
 };

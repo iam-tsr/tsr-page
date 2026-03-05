@@ -35,10 +35,30 @@ width: 900px
 # Pages configuration
 pages:
   - title: about
-    url: /
-    body: _content/about.html
+    url: / # use '/' for root page
+    page: _content/about.html
     css: /_style/about.css
+    content: content/about
+    metadata: metadata/about.yml
+
+  - title: projects
+    caption: Here are some of my projects.
+    url: /projects/
+    page: _content/projects.html
+    css: /_style/projects.css
+    metadata: metadata/projects.yml
+
+  - title: publications
+    caption: Here are some of my publications.
+    url: /publications/
+    page: _content/publications.html
+    css: /_style/publications.css
+    metadata: metadata/publications.yml
+
   - title: blog
+    caption: Here are my thoughts and writings on various topics.
     url: /blog/
-    body: _content/blog.html
+    page: _content/blog.html
     css: /_style/blog.css
+    content: content/blog
+    metadata: metadata/blog.yml

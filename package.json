@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Academic profile template for scholars and designers. Powered by Eleventy & tsr-page theme.",
   "scripts": {
-    "start": "eleventy --serve",
+    "dev": "eleventy --serve",
     "build": "eleventy"
   },
   "keywords": [],
