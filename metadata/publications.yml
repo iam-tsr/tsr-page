@@ -1,36 +1,34 @@
 publications:
   - title: "A Deep Learning Approach to Predicting Stock Prices"
-    date: Jan 1, 2024
-    authors: "[John Doe](#), Jane Smith"
+    date: "2024"
+    authors: "[Geoffrey Hinton](#), Yann LeCun"
     journal: "Journal of Financial Technology"
-    tags: { subject: physics, bg_color: skyblue, text_color: black }
+    tags: { subject: statistical, bg_color: pink, text_color: black }
     links: [
-      { name: arXiv, url: / },
       { name: Scholar, url: /, icon: fa-brands fa-google-scholar },
       { name: Slides, url: / },
       { name: PDF, url: /, icon: fa-solid fa-file-pdf },
     ]
 
   - title: "An Analysis of Machine Learning Algorithms for Image Classification"
-    date: Jan 1, 2022
-    authors: "Alice Johnson, Bob Brown"
+    date: "2022"
+    authors: "Yoshua Bengio, [Andrew Ng](#)"
     # journal: "International Journal of Computer Vision"
-    tags: { subject: physics, bg_color: skyblue, text_color: black }
+    tags: { subject: vision, bg_color: blue, text_color: white }
     links: [
-      { name: arXiv, url: / },
+      { name: Book, url: /, icon: fa-solid fa-book },
       { name: Scholar, url: /, icon: fa-brands fa-google-scholar },
       { name: Slides, url: / },
       { name: PDF, url: /, icon: fa-solid fa-file-pdf },
+      { name: Video, url: /, icon: fa-solid fa-video },
     ]
 
   - title: "A Survey of Natural Language Processing Techniques for Sentiment Analysis"
-    date: Jan 1, 2021
-    authors: "Charlie Davis, Dana Lee"
+    date: "2021"
+    authors: "Fei-Fei Li, Andrej Karpathy"
     journal: "Journal of Artificial Intelligence Research"
-    # tags: { subject: physics, bg_color: skyblue, text_color: black }
+    # tags: { subject: name_here, bg_color: color_here, text_color: color_here } # Comment this line if you don't want to use tags for this publication. Otherwise, specify the subject and colors for the tag.
     links: [
-      { name: arXiv, url: / },
       { name: Scholar, url: /, icon: fa-brands fa-google-scholar },
-      { name: Slides, url: / },
       { name: PDF, url: /, icon: fa-solid fa-file-pdf },
     ]
