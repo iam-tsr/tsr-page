@@ -3,7 +3,7 @@
 K-Fold Cross-Validation is a robust statistical method used to estimate the skill of a machine learning model on unseen data. It helps mitigate problems like overfitting and provides a more reliable metric than a single train-test split.
 
 <div style="width:100%; text-align: center;">
-  <img src="../../assets/blog/sample.png" alt="Image from Scikit-learn" width=700/>
+  <img src="../../assets/blog/post/sample.png" alt="Image from Scikit-learn" width=700/>
 </div>
 
 In K-Fold, the original dataset is randomly partitioned into k equal-sized subsamples (folds). The model is trained and tested k times:

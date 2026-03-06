@@ -1,6 +1,6 @@
 <div class="banner">
     {% if blog.banner and blog.banner.image %}
-    <img src="{{ blog.banner.image }}" alt="{{ blog.banner.alt }}" />
+    <img src="{{ blog.banner.image }}" alt="{{ blog.banner.alt }}" loading="lazy" />
     {% endif %}
 </div>
 
@@ -24,7 +24,11 @@
                     {% endif %}
                     <div class="post-image">
                         {% if post.image %}
-                        <img src="{{ post.image }}" alt="{{ post.title }}" />
+                        {% if post.imageLocal %}
+                        <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" loading="lazy" />
+                        {% else %}
+                        <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy" />
+                        {% endif %}
                         {% else %}
                         <div class="placeholder-image">No Image</div>
                         {% endif %}
@@ -50,4 +54,7 @@
                 {% else %}
                 <p>No blog posts available at the moment. Please check back later!</p>
                 {% endif %}
+            </a>
+        </a>
+    </a>
 </div>

@@ -4,6 +4,7 @@ adjustment:
     width: "100%" # Keep it as it is to maintain the aspect ratio of the banner image
     absolute_dim: "150px"
 
+  # Adjust the height & width of the post cards. You can also specify an absolute height if needed.
   post:
     height: "50%"
     width: "90%"
@@ -12,16 +13,18 @@ adjustment:
 banner:
   image: "https://images.unsplash.com/photo-1561570541-aaba21a3ecf0?auto=format&fit=crop"
   alt: Blog Banner
-  width: 1200
+  width: 1200 # The width & height of the banner image. You can adjust this value based on your design needs.
   height: 400
 
+
+# The list of blog posts. Each post should have a title, date, tags, image, and path to the markdown file. Optionally, you can also include a link and color for styling.
 posts:
   - title: My latest blog post
     date: May 20, 2024
     tags: [research, ml, ai,]
     image: https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop
-    path: content/blog/my-latest-blog-post.md
-    color: { background: "#464E7D", text: "white" }
+    path: content/blog/my-latest-blog-post.md # This should be the path to your markdown file for the blog post. Make sure to place the markdown file in the correct folder.
+    color: { background: "#464E7D", text: "white" } # Optional color for styling the post card. You can specify both background and text colors.
   
   - title: Another blog post
     date: Jan 10, 2024
@@ -34,11 +37,11 @@ posts:
     date: Mar 5, 2024
     tags: [coding, tips]
     image: https://images.unsplash.com/photo-1707135719639-409915fbc68f?auto=format&fit=crop
-    link: /
+    link: /tsr-page/
     color: { background: "#D9D9D9", text: "black" }
 
   - title: A fourth blog post
     date: Apr 15, 2024
     tags: [lifestyle]
-    image: https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop
-    link: /
+    image: assets/blog/image.png # You can also use a local image by providing the path relative to the root of your project. Make sure to place the image in the correct folder.
+    link: /tsr-page/ # You can also use an external link.
