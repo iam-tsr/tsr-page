@@ -35,10 +35,8 @@ blog:
   items:
     - title: Visionary Scientist
       date: May 20, 1954
-      tags: [architect, strategist]
       link: /tsr-page/ # replace with your blog post link
 
     - title: Nuclear Pioneer
       date: Aug 10, 1948
-      tags: [founder, visionary, pioneer]
       path: content/blog/my-latest-blog-post.md # replace with your blog post path

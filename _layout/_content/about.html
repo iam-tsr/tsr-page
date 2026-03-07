@@ -76,16 +76,7 @@
         <h3 class="feature-title">{{ about.blog.feature-title }}</h3>
         {% for blog in about.blog.items %}
         <article class="blog-card">
-            <div class="blog-card-meta">
-                <span class="blog-date">{{ blog.date }}</span>
-                {% if blog.tags %}
-                <div class="card-tags">
-                    {% for tags in blog.tags %}
-                    <span class="tags">{{ tags }}</span>
-                    {% endfor %}
-                </div>
-                {% endif %}
-            </div>
+            <span class="blog-date">{{ blog.date }}</span>
             <h4 class="blog-title">
                 {% if blog.external %}
                 <a href="{{ blog.link }}" target="_blank" rel="noopener noreferrer">{{ blog.title }}</a>

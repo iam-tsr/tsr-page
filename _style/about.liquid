@@ -33,6 +33,10 @@ permalink: /_style/about.css
     visibility: hidden;
 }
 
+.content {
+    margin-bottom: 3rem;
+}
+
 /* About Content */
 .about-content {
     display: flow-root;
@@ -67,6 +71,7 @@ permalink: /_style/about.css
     font-size: var(--h2);
     margin-bottom: 2rem;
     font-weight: var(--normal);
+    line-height: 1;
 }
 
 .blog-title {
@@ -96,7 +101,7 @@ permalink: /_style/about.css
     padding-bottom: 1rem;
 }
 
-.publication-card-meta, .blog-card-meta{
+.publication-card-meta{
     display: flex;
     gap: 1rem;
     margin: 0 0 0.5rem 0;
@@ -104,11 +109,6 @@ permalink: /_style/about.css
 
 .publication-card-meta {
     align-items: flex-start;
-}
-
-.blog-card-meta {
-    align-items: baseline;
-    margin: 0;
 }
 
 .publication-authors a:hover{
@@ -182,5 +182,6 @@ permalink: /_style/about.css
 
     .profile-caption {
         max-width: 100%;
+        margin-bottom: 1rem;
     }
 }
