@@ -1,7 +1,7 @@
 
 <div align="center">
 
-<p style="font-size:40px; font-weight: bold;" >tsr-page</p>
+# tsr-page
 
 [<img src="repo-images/mockups/mockup_white.jpg" alt="banner" style="width:100%;">](https://alignify-app.vercel.app/)
 
