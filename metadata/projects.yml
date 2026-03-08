@@ -8,13 +8,13 @@ sections:
       - title: My latest project
         description: A brief description of my latest project. It is about something very cool and innovative. You should definitely check it out!
         links: [
-          { url: /, icon: fa-brands fa-github },
-          { url: /, icon: fa-solid fa-globe },
-          { url: /, icon: fa-brands fa-kaggle },
-          { url: /, icon: fa-solid fa-file-lines },
-          { url: /, icon: fa-solid fa-video },
-          { url: /, icon: fa-solid fa-book },
-          { url: /, icon: fa-solid fa-newspaper },
+          { url: /tsr-page/, icon: fa-brands fa-github },
+          { url: /tsr-page/, icon: fa-solid fa-globe },
+          { url: /tsr-page/, icon: fa-brands fa-kaggle },
+          { url: /tsr-page/, icon: fa-solid fa-file-lines },
+          { url: /tsr-page/, icon: fa-solid fa-video },
+          { url: /tsr-page/, icon: fa-solid fa-book },
+          { url: /tsr-page/, icon: fa-solid fa-newspaper },
         ]
         image: https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop
         tags: [writing, research, ml, data science, python, kaggle, video]
@@ -23,8 +23,8 @@ sections:
       - title: Another project
         description: A brief description of another project. It is about something else that is also very interesting and useful. You should also check it out!
         links: [
-          { url: /, icon: fa-brands fa-github },
-          { url: /, icon: fa-solid fa-globe },
+          { url: /tsr-page/, icon: fa-brands fa-github },
+          { url: /tsr-page/, icon: fa-solid fa-globe },
         ]
         image: assets/projects/image.jpg # You can also use a local image by providing the path relative to the root of your project. Make sure to place the image in the correct folder.
         tags: [research, ml, data science, python]
@@ -34,18 +34,18 @@ sections:
       - title: Another project
         description: A brief description of another project. It is about something else that is also very interesting and useful. You should also check it out!
         links: [
-          { url: /, icon: fa-brands fa-github },
-          { url: /, icon: fa-solid fa-globe },
+          { url: /tsr-page/, icon: fa-brands fa-github },
+          { url: /tsr-page/, icon: fa-solid fa-globe },
         ]
         tags: [writing]
       
       - title: My latest project
         description: A brief description of my latest project. It is about something very cool and innovative. You should definitely check it out!
         links: [
-          { url: /, icon: fa-brands fa-github },
-          { url: /, icon: fa-solid fa-globe },
-          { url: /, icon: fa-brands fa-kaggle },
-          { url: /, icon: fa-solid fa-file-lines },
-          { url: /, icon: fa-solid fa-video },
+          { url: /tsr-page/, icon: fa-brands fa-github },
+          { url: /tsr-page/, icon: fa-solid fa-globe },
+          { url: /tsr-page/, icon: fa-brands fa-kaggle },
+          { url: /tsr-page/, icon: fa-solid fa-file-lines },
+          { url: /tsr-page/, icon: fa-solid fa-video },
         ]
         tags: [writing, research, ml, data science, python, kaggle, video]

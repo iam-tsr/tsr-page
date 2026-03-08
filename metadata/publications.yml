@@ -5,9 +5,9 @@ publications:
     journal: "Journal of Financial Technology"
     tags: { subject: statistical, bg_color: pink, text_color: black }
     links: [
-      { name: Scholar, url: /, icon: fa-brands fa-google-scholar },
-      { name: Slides, url: / },
-      { name: PDF, url: /, icon: fa-solid fa-file-pdf },
+      { name: Scholar, url: /tsr-page/, icon: fa-brands fa-google-scholar },
+      { name: Slides, url: /tsr-page/ },
+      { name: PDF, url: /tsr-page/, icon: fa-solid fa-file-pdf },
     ]
 
   - title: "An Analysis of Machine Learning Algorithms for Image Classification"
@@ -16,11 +16,11 @@ publications:
     # journal: "International Journal of Computer Vision"
     tags: { subject: vision, bg_color: blue, text_color: white }
     links: [
-      { name: Book, url: /, icon: fa-solid fa-book },
-      { name: Scholar, url: /, icon: fa-brands fa-google-scholar },
-      { name: Slides, url: / },
-      { name: PDF, url: /, icon: fa-solid fa-file-pdf },
-      { name: Video, url: /, icon: fa-solid fa-video },
+      { name: Book, url: /tsr-page/, icon: fa-solid fa-book },
+      { name: Scholar, url: /tsr-page/, icon: fa-brands fa-google-scholar },
+      { name: Slides, url: /tsr-page/ },
+      { name: PDF, url: /tsr-page/, icon: fa-solid fa-file-pdf },
+      { name: Video, url: /tsr-page/, icon: fa-solid fa-video },
     ]
 
   - title: "A Survey of Natural Language Processing Techniques for Sentiment Analysis"
@@ -29,6 +29,6 @@ publications:
     journal: "Journal of Artificial Intelligence Research"
     # tags: { subject: name_here, bg_color: color_here, text_color: color_here } # Comment this line if you don't want to use tags for this publication. Otherwise, specify the subject and colors for the tag.
     links: [
-      { name: Scholar, url: /, icon: fa-brands fa-google-scholar },
-      { name: PDF, url: /, icon: fa-solid fa-file-pdf },
+      { name: Scholar, url: /tsr-page/, icon: fa-brands fa-google-scholar },
+      { name: PDF, url: /tsr-page/, icon: fa-solid fa-file-pdf },
     ]
