@@ -8,6 +8,19 @@ export default async function(eleventyConfig) {
   const md = markdownIt.default({ html: true });
   md.use(texmath.default, { engine: katex.default, delimiters: 'dollars', katexOptions: { output: 'html' } });
 
+  md.renderer.rules.image = function(tokens, idx, options, env, self) {
+    const token = tokens[idx];
+    const src = token.attrGet('src') || '';
+    const alt = token.content || '';
+    const title = token.attrGet('title') || '';
+    const titleAttr = title ? ` title="${md.utils.escapeHtml(title)}"` : '';
+    const img = `<img src="${md.utils.escapeHtml(src)}" alt="${md.utils.escapeHtml(alt)}"${titleAttr}>`;
+    if (alt && alt !== 'alt text') {
+      return `<figure>${img}<figcaption>${md.utils.escapeHtml(alt)}</figcaption></figure>`;
+    }
+    return img;
+  };
+
   const siteContent = await fs.readFile('./site.yml', 'utf-8');
   const siteData = yaml.load(siteContent);
   
