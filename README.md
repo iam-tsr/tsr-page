@@ -53,7 +53,7 @@
 
 | Desktop | Tablet |
 |:---:|:---:|
-| <img src="repo-images/mockups/desktop.png" width="500"> | <img src="repo-images/mockups/tablet.png" width="300"> |
+| <img src=".github/docs/mockups/desktop.png" width="500"> | <img src=".github/docs/mockups/tablet.png" width="300"> |
 
 ## Getting Started
 
