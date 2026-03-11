@@ -15,12 +15,11 @@
 <br>
 
 ![GitHub Release](https://img.shields.io/github/v/release/iam-tsr/tsr-page)
+[![Jekyll Themes Shield](https://img.shields.io/badge/featured%20on-JT-red.svg)](https://jekyll-themes.com/iam-tsr/tsr-page)
 [![build](https://img.shields.io/github/actions/workflow/status/iam-tsr/tsr-page/deploy.yml?color=darkgreen&label=build)](https://github.com/iam-tsr/tsr-page/actions/workflows/deploy.yml)
 [![license](https://img.shields.io/github/license/iam-tsr/tsr-page)](https://github.com/iam-tsr/tsr-page/blob/main/LICENSE)
 
 </div>
-
----
 
 ## Table of Contents
 
