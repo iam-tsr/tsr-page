@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize hamburger menu
     initHamburgerMenu();
 
+    // Initialize navbar progress bar
+    initNavbarProgress();
+
     // Set current year in footer
     const yearElement = document.getElementById("current-year");
     if (yearElement) {
