@@ -7,6 +7,13 @@ permalink: /_style/_components/global.css
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* CSS Variables */
+:root {
+    --font-normal: '{{ site.fonts.normal.name }}', {{ site.fonts.normal.type }};
+    --font-code: '{{ site.fonts.code.name }}', {{ site.fonts.code.type }};
+    --font-tags: '{{ site.fonts.tags.name }}', {{ site.fonts.tags.type }};
+}
+
 p, h1, h2, h3, h4, h5, h6, a {
   margin: 0;
 }
@@ -19,7 +26,7 @@ a {
 body {
     margin: 0;
     line-height: 1.5;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-normal);
     font-weight: var(--normal);
     background-color: var(--bg-primary);
     color: var(--text-primary);
@@ -258,7 +265,7 @@ main {
     justify-content: center;
     padding: 0.05rem 0.7rem;
     border-radius: 999px;
-    font-family: "Cousine", monospace;
+    font-family: var(--font-tags);
 }
 
 .button {
@@ -389,7 +396,7 @@ main {
     padding: 0.2rem;
     border-radius: 4px;
     line-height: 1.8;
-    font-family: 'roboto', monospace;
+    font-family: var(--font-code);
 }
 
 .content pre {

@@ -1,5 +1,17 @@
 # Site metadata and configuration
 
+# Font configuration
+fonts:
+  normal:
+    name: Inter
+    type: sans-serif
+  code:
+    name: Roboto
+    type: monospace
+  tags:
+    name: Cousine
+    type: monospace
+
 # Greeting message - optional
 greeting: Namaste! I am
 
