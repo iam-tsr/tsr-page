@@ -1,16 +1,5 @@
 # Site metadata and configuration
 
-# Font configuration
-fonts:
-  normal:
-    name: Inter
-    type: sans-serif
-  code:
-    name: Roboto
-    type: monospace
-  tags:
-    name: Cousine
-    type: monospace
 
 # Greeting message - optional
 greeting: Namaste! I am
@@ -97,6 +86,19 @@ contacts:
 footer_text: "You R. Name. Powered by Eleventy. Inspired by tsr-page theme. Hosted by GitHub Pages. Photos from Unsplash."
 
 
+# Font configuration
+fonts:
+  normal:
+    name: Inter
+    type: sans-serif
+  code:
+    name: Roboto
+    type: monospace
+  tags:
+    name: Cousine
+    type: monospace
+
+    
 # Optional Custom Loading Animation (Replace the color with var(--text-primary) for theme adaptability)
 loader:
   html: '<div class="loader"></div>'
