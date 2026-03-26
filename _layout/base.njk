@@ -2,6 +2,11 @@
 <html lang="en">
   {% include "_components/head.njk" %}
   <body>
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <img src="" alt="" id="lightboxImg" loading="lazy">
+    </div>
+
     <div id="loader-wrapper">
       {% if site.loader %}
         {{ site.loader.html | safe }}

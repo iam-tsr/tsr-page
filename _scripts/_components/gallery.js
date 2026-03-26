@@ -43,8 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     gallery.addEventListener('click', (e) => {
         const item = e.target.closest('.gallery-item');
-        if (!item) return;
-        const img = item.querySelector('img');
+        const contentImg = e.target.closest('.content img');
+        const img = item ? item.querySelector('img') : contentImg;
+        if (!img) return;
         lightboxImg.src = img.src;
         lightboxImg.alt = img.alt;
         lightbox.classList.add('active');
