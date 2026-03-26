@@ -1,49 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
     const gallery = document.getElementById('gallery');
-    if (!gallery) return;
-
-    // Save all gallery items (wrappers)
-    const items = Array.from(gallery.querySelectorAll('.gallery-item'));
     
-    function renderMasonry() {
-        let colsCount = window.innerWidth <= 480 ? 1 : window.innerWidth <= 768 ? 2 : 3;
+    if (gallery) {
+        const items = Array.from(gallery.querySelectorAll('.gallery-item'));
         
-        // Don't re-render if the column count hasn't changed and it's already structured
-        if (gallery.children.length === colsCount && gallery.children[0].classList.contains('masonry-column')) {
-            return;
+        function renderMasonry() {
+            let colsCount = window.innerWidth <= 480 ? 1 : window.innerWidth <= 768 ? 2 : 3;
+            
+            if (gallery.children.length === colsCount && gallery.children[0].classList.contains('masonry-column')) {
+                return;
+            }
+
+            gallery.innerHTML = '';
+            
+            const columns = [];
+            for (let i = 0; i < colsCount; i++) {
+                const col = document.createElement('div');
+                col.className = 'masonry-column';
+                gallery.appendChild(col);
+                columns.push(col);
+            }
+
+            items.forEach((item, index) => {
+                columns[index % colsCount].appendChild(item);
+            });
         }
 
-        // Clear gallery
-        gallery.innerHTML = '';
-        
-        // Create columns
-        const columns = [];
-        for (let i = 0; i < colsCount; i++) {
-            const col = document.createElement('div');
-            col.className = 'masonry-column';
-            gallery.appendChild(col);
-            columns.push(col);
-        }
-
-        // Distribute items left-to-right
-        items.forEach((item, index) => {
-            columns[index % colsCount].appendChild(item);
-        });
+        renderMasonry();
+        window.addEventListener('resize', renderMasonry);
     }
 
-    renderMasonry();
-    window.addEventListener('resize', renderMasonry);
-
-    // Lightbox
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImg');
     const lightboxClose = document.getElementById('lightboxClose');
 
     if (!lightbox || !lightboxImg || !lightboxClose) return;
 
-    gallery.addEventListener('click', (e) => {
+    document.addEventListener('click', (e) => {
         const item = e.target.closest('.gallery-item');
-        const contentImg = e.target.closest('.content img');
+        const contentImg = e.target.tagName === 'IMG' && e.target.closest('.content') ? e.target : null;
         const img = item ? item.querySelector('img') : contentImg;
         if (!img) return;
         lightboxImg.src = img.src;
