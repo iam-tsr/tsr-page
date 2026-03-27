@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const gallery = document.getElementById('gallery');
-    
+
+    // Masonry layout for gallery
     if (gallery) {
         const items = Array.from(gallery.querySelectorAll('.gallery-item'));
         
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', renderMasonry);
     }
 
+    // Lightbox functionality
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImg');
     const lightboxClose = document.getElementById('lightboxClose');
