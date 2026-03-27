@@ -3,10 +3,12 @@ export default async function (eleventyConfig) {
   const yaml = await import('js-yaml');
   const path = await import('path');
   const markdownIt = await import('markdown-it');
+  const taskLists = await import('markdown-it-task-lists');
   const texmath = await import('markdown-it-texmath');
   const katex = await import('katex');
   const md = markdownIt.default({ html: true });
   md.use(texmath.default, { engine: katex.default, delimiters: 'dollars', katexOptions: { output: 'html' } });
+  md.use(taskLists.default, { enabled: true, label: true, labelAfter: true });
 
   // Add target="_blank" and rel="noopener noreferrer" to external links
   function addTargetBlank(mdInstance) {
@@ -149,8 +151,10 @@ export default async function (eleventyConfig) {
   // Add renderFile filter to include markdown content
   eleventyConfig.addAsyncShortcode("renderFile", async function (filePath) {
     const fs = await import('fs/promises');
+    const taskLists = await import('markdown-it-task-lists');
     const markdownIt = await import('markdown-it');
     const md = markdownIt.default();
+    md.use(taskLists.default, { enabled: true, label: true, labelAfter: true });
     addTargetBlank(md);
 
     const content = await fs.readFile(filePath, 'utf-8');

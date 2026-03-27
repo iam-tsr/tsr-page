@@ -19,18 +19,18 @@ banner:
 
 # The list of blog posts. Each post should have a title, date, tags, image, and path to the markdown file. Optionally, you can also include a link and color for styling.
 posts:
-  - title: My latest blog post
-    date: May 20, 2024
-    tags: [research, ml, ai,]
+  - title: Blog Demo
+    date: Mar 27, 2026
+    tags: [markdown, blog-demo]
     image: https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop
-    path: content/blog/my-latest-blog-post.md # This should be the path to your markdown file for the blog post. Make sure to place the markdown file in the correct folder.
+    path: content/blog/blog-demo.md # This should be the path to your markdown file for the blog post. Make sure to place the markdown file in the correct folder.
     color: { background: "#464E7D", text: "white" } # Optional color for styling the post card. You can specify both background and text colors.
   
-  - title: Another blog post
-    date: Jan 10, 2024
-    tags: [writing]
+  - title: Maths Demo
+    date: Jan 10, 2026
+    tags: [k-fold, ml]
     image: https://images.unsplash.com/photo-1708011271935-3e109df56fe0?auto=format&fit=crop
-    path: content/blog/another-blog-post.md
+    path: content/blog/maths-demo.md
     color: { background: "#D9D9D9", text: "black" }
   
   - title: A third blog post
