@@ -383,6 +383,15 @@ main {
     margin: 0.4rem 0;
 }
 
+.content .task-list-item {
+    list-style-type: none;
+}
+
+.content .task-list-item input {
+    margin-right: 0.5rem;
+    accent-color: var(--accent-color);
+}
+
 .content code {
     background-color: var(--bg-code);
     color: var(--accent-color);
@@ -425,6 +434,24 @@ main {
     border: none;
     border-top: 1px solid var(--border-color);
     margin: 2rem 0;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.content th,
+.content td {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.content th {
+    background-color: var(--bg-secondary);
+    font-weight: var(--bold);
 }
 
 /* Responsive Design */

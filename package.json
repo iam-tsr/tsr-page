@@ -1,6 +1,6 @@
 {
   "name": "tsr-page",
-  "version": "0.1.0",
+  "version": "0.2.2",
   "description": "Academic profile template for scholars and designers. Powered by Eleventy & tsr-page theme.",
   "scripts": {
     "dev": "eleventy --serve",
@@ -8,12 +8,13 @@
   },
   "keywords": [],
   "author": "TSR",
-  "license": "apache-2.0",
+  "license": "MIT",
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "katex": "^0.16.33",
     "markdown-it": "^14.1.1",
+    "markdown-it-task-lists": "^2.1.1",
     "markdown-it-texmath": "^1.0.0"
   }
 }
